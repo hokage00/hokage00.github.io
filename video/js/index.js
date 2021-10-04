@@ -1,22 +1,25 @@
 let video = document.getElementById("myVideo")
 
-let plyBtn = document.getElementById("playBtn")
-playBtn.addEventListener("click", function(){
+let playBtn = document.getElementById("playBtn")
+playBtn.addEventListener("click",function(){
     video.play()
 })
 
 let pauseBtn = document.getElementById("pauseBtn")
-pauseBtn.addEventListener("click", function(){
+pauseBtn.addEventListener("click",function(){
     video.pause()
 })
 
 let freezeBtn = document.getElementById("freezeBtn")
-freezeBtn.addEventListener("mousedown", function(){
-
+freezeBtn.addEventListener("mousedown",function(){
+    video.pause()
 })
+freezeBtn.addEventListener("mouseup",function(){
+    video.play()
+})      
 
-
-let freezeBtn = document.getElementById("freezeBtn")
-freezeBtn.addEventListener("mouseup", function(){
-    
+let seekBar = document.getElementById("seekBar")
+seekBar.addEventListener("change",function(){
+    let time = video.duration * (seekBar.value/100)
+    video.currentTime = time
 })
