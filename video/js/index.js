@@ -23,3 +23,14 @@ seekBar.addEventListener("change",function(){
     let time = video.duration * (seekBar.value/100)
     video.currentTime = time
 })
+
+video.addEventListener("timeupdate",function(){
+    let value = (100/video.duration) * video.currentTime
+    seekBar.value = value
+    console.log(video.currentTime)
+})
+
+let volumeControl = document.getElementById("volume")
+volumeControl.addEventListener("change", function(){
+    video.volume = volumeControl.value
+})
