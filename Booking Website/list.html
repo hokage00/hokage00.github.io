@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Booking App - List Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>List-Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+       
 </head>
 
 <body>
@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="index.html">Table Booking App</a>
+                    <a class="navbar-brand" href="index.html">JesselBall</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +29,10 @@
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="book.html">Book</a>
+                                <a class="nav-link" href="booking.html">Booking</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="list.html">List</a>
+                                <a class="nav-link" href="list.html">Availability</a>
                             </li>
                         </ul>
                     </div>
@@ -44,8 +44,8 @@
         <div class="row">
             <div class="col">
                 <div class="jumbotron">
-                    <h1 class="display-4">Here is our booking list!</h1>
-                    <p class="lead">Call them to confirm!</p>
+                    <h1 class="display-4">Here is our booking list</h1>
+                    <p class="lead">Call them to confirm booking</p>
                 </div>
             </div>
         </div>
@@ -54,22 +54,25 @@
         <div class="row">
             <div class="col">
                 <button type="button" class="btn btn-primary" id="refreshNow">Refresh Now</button>
-                <table class="table table-striped" id="bookingNameList">
+                <table class="table table-striped">
                     <thead>
-                        <tr>
-                            <th scope="col">Id</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Pax</th>
-                            <th scope="col">Remarks</th>
-                            <th scope="col">Task</th>
-                        </tr>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
                     </thead>
                     <tbody>
+                      
                     </tbody>
-                </table>
+                  </table>
             </div>
+           
         </div>
+       
+
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
